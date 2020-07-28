@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+</center>
+  <div class="well">
+	<h1>  Search Results</h1>
+  		<h3>{% for item in foods %}
+  			<li>{{item}} : {{foods[item]}} carbs </li>
+		 {% endfor %} </h3>
+ <input type="button" value="Go back!" onclick="history.back()">
+</div>
+
+{% endblock %}

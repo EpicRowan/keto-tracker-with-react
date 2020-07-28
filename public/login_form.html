@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+</center>
+  <div class="well">
+  <h1>Login</h1>
+  <form action="/login" method="POST">
+
+    <div>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+    </div>
+
+    <div>
+      <label>Password:
+        <input type="password" name="password" required>
+      </label>
+    </div>
+
+    <div>
+      <input type="submit" value="Log In">
+    </div>
+</div>
+  </form>
+{% endblock %}

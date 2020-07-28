@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+</center>
+  <div class="well">
+
+  <h1>New Entry</h1>
+  <form action="/users/{{user_id}}/new" method="POST">
+
+    <div>
+      <label>Food Name:
+        <input type="text" name="food" required>
+      </label>
+    </div>
+
+      <label>Carb total:
+        <input type="text" name="carbs" required>
+      </label>
+ 
+    <div>
+      <label>Date:
+        <input type="date" name="date" required>
+      </label>
+    </div>
+    <div>
+      <input type="submit" value="New Entry">
+    </div>
+   </div>
+  </form>
+</div>
+
+{% endblock %}

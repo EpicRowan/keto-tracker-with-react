@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+</center>
+  <div class="well">
+
+  <h1> Welcome {{ user.email }} </h1>
+
+  <a href="/users/{{user_id}}/new"> <h2> New Entry</h2></a>
+
+ <a href="/search"> <h2> Search for nutrition info</h2></a>
+
+    <h2> Past Entries</h2>
+    {% if meals %}
+		{% for meal in meals %}
+<li><a href="/users/{{user.user_id}}/{{meal.date}}">{{meal.date}}</li>
+		{% endfor %}
+	{% endif %}
+</div>
+
+{% endblock %}
