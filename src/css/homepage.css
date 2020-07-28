@@ -1,0 +1,22 @@
+body {
+    background: #333 url("/static/img/keto.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: blue;
+    text-align: center;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.error {
+    color: red
+}
